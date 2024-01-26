@@ -1,0 +1,426 @@
+* {
+    background-color: #02090a;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+  
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo img {
+    width: 20vw;
+  }
+  
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list-pc {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  .nav-item {
+    margin: 8px 25px;
+    font-size: 1.2em;
+    opacity: 1;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .nav-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .nav-item a {
+    position: relative;
+  }
+  
+  
+  .nav-item a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0f9690;
+    transition: .3s;
+  }
+  
+  .nav-item a:hover::before {
+    width: 100%;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+  
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+
+/*header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+header div#logo {
+    width: 40%;
+}
+
+header div#logo img {
+    width: 20vw;
+}
+
+header div#menu {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div#menu nav .pc-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+header div#menu nav .pc-menu div a {
+    margin: 0px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2em;
+}
+
+header div#menu nav .pc-menu .nav-item a {
+    position: relative;
+}
+
+
+header div#menu nav .pc-menu .nav-item a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0f9690;
+    transition: .3s;
+}
+
+header div#menu nav .pc-menu .nav-item a:hover::before {
+    width: 100%;
+}
+
+header div#menu .mobile-menu {
+    display: none;
+}
+
+
+header div#menu .mobile-menu-icon {
+    display: none;
+}*/
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 150px;
+}
+
+main div#fundo {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+main div#fundo div#titlefundo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+}
+
+main div#fundo div#titlefundo span {
+    color: #6da5c0;
+}
+
+main div#fundo div#imgfundo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#sobremim {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+main div#sobremim div#imgsobremim {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#sobremim div#imgsobremim img {
+    width: 20vw;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#sobremim div#textosobremim {
+    width: 70%;
+}
+
+main div#sobremim div#textosobremim p {
+    text-align: justify;
+}
+
+
+main div#sobremim h1 {
+    margin-bottom: 20px;
+}
+
+main div#trabalho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+main div#trabalho div#txttrab,
+main div#projeto div#txtproj {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main div#trabalho div#cxablocostrab,
+main div#projeto div#cxablocosproj {
+    display: flex;
+    flex-direction: row;
+}
+
+main div#trabalho .blocotrab,
+main div#projeto .blocoproj {
+    background-color: #072E33;
+    width: 30%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 30px;
+}
+
+footer div#foot1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div#foot1 div#appsfoot {
+    display: flex;
+    flex-direction: row;
+}
+
+footer div#foot1 div#appsfoot .footapps {
+    margin: 0px 10px;
+}
+
+footer div#foot1 div#appsfoot .footapps img {
+    width: 3vw;
+}
+
+footer div#foot1 div#emailfoot p {
+    font-size: 1.3em;
+}
+
+footer div#foot2 {
+    width: 60%;
+    display: flex;
+    
+}
+
+footer div#foot2 div.foot2bot {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div#foot2 div.foot2bot button{
+    font-size: 1.3em;
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    font-family: 'Jost', sans-serif;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 920px) {
+
+    .logo{
+        margin-top: 2%;
+    }
+
+    .nav-bar .logo img {
+      width: 38vw;
+    }
+    
+    .nav-bar {
+      padding: 1rem 1rem;
+  }
+  
+  .nav-item {
+      display: none;
+      font-size: 1.1em;
+  }
+  
+  
+  .mobile-menu-icon {
+      display: block;
+      margin-top: 8%;
+      justify-content: center;
+  }
+  
+  
+  .mobile-menu-icon button{
+      background-color: transparent;
+      border: transparent;
+      cursor: pointer;
+      width: 15%;
+  
+  }
+  
+  .mobile-menu .nav-list-pc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+  }
+  
+  .open {
+      display: block;
+  }
+      
+  .mobile-menu-icon button img{
+  
+      width: 10vw;
+  }
+  }
+
+@media only screen and (max-width: 768px) {
+
+
+    main div#fundo {
+        flex-direction: column;
+    }
+
+    main div#fundo div#titlefundo {
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    main div#fundo div#imgfundo {
+        width: 100%;
+    }
+
+    main div#sobremim {
+        flex-direction: column;
+    }
+
+    main div#sobremim div#imgsobremim {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main div#sobremim div#imgsobremim img {
+        width: 70vw;
+    }
+
+    main div#sobremim div#textosobremim {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    main div#trabalho div#cxablocostrab,
+    main div#projeto div#cxablocosproj {
+        flex-direction: column;
+    }
+
+    main div#trabalho .blocotrab,
+    main div#projeto .blocoproj {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div#foot1 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    footer div#foot1 div#appsfoot .footapps img {
+        width: 7vw;
+    }
+
+    footer div#foot2 {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    footer div#foot2 div.foot2bot {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
